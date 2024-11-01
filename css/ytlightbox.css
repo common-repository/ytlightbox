@@ -1,0 +1,74 @@
+/** 
+ * Basic YTLighbox css files
+ */
+
+#ytlightbox-modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .70;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 999999;
+}
+
+#ytlightbox-modal-content {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);    
+    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+    background: #f9f9f9 none repeat scroll 0 0;
+    border-radius:4px;
+    color:#444;
+    /* background-color: white; */
+
+    display: none;
+    height: auto;
+    width: 500px;
+
+    min-height:95px;
+    
+    left: 50%;
+    top: 50%;    
+    /* margin: -120px 0 0 -160px; */
+    padding:16px;
+    margin: -152px 0 0 -263px;
+    padding: 10px;
+    position: fixed;
+
+    z-index: 999999;    
+}
+
+#ytlightbox-close {
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    width: 36px;
+    z-index: 8040;
+    background-image: url("../images/ytligh-close.png");
+    background-position: 0 0;    
+}
+
+#ytlightbox-innercontent{
+    padding:20px 20px 0 20px;
+}
+
+#ytlightbox-share-buttons{
+    padding-bottom:5px;
+}
+
+#ytlightbox-innercontent p{
+    font-size:15px;
+    color:#444;
+}
+
+#ytlightbox-modal-background.active, #ytlightbox-modal-content.active {
+    display: block;
+}​
